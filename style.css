@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(200, 200, 200, 0.2), rgba(200, 200, 200, 0.2)), url('img/background.jpg') no-repeat;
+    background-size: cover;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo{
+    background-color: #393939;
+    color: #fff;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    font-weight: 400;
+    border: 2px solid #fff;
+    margin-bottom: 20px;
+}
+
+.titulo h1 {
+    font-weight: 600;
+    text-align: center;
+}
+
+.generador-frases{
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px;
+    border-radius: 15px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#frase{
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+#autor{
+    font-size: 1.6rem;
+    color: red;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.btn button{
+background-color: #262626;
+color: #fff;
+font-size: 1.3rem;
+padding: 10px 15px;
+margin-top: 25px;
+border-radius: 5px;
+}
+
+.btn button:active{
+background-color: lightblue;
+}
