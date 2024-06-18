@@ -1,13 +1,21 @@
-let btn = document.querySelector("#nueva-frase")
-let frase = document.querySelector("#frase")
-let autor = document.querySelector("#autor")
+let btn = document.querySelector("#nueva-frase");
+let frase = document.querySelector("#frase");
+let autor = document.querySelector("#autor");
 
-btn.addEventListener("click", function(){
-    let random = Math.floor(Math.random() * frases.length)
+let ultimaFrase = -1;
 
-    frase.innerText = frases[random].frase
-    autor.innerText = frases[random].persona
-})
+btn.addEventListener("click", function () {
+  let random = Math.floor(Math.random() * frases.length);
+
+  while (random === ultimaFrase) {
+    random = Math.floor(Math.random() * frases.length);
+  }
+  
+  frase.innerText = frases[random].frase;
+  autor.innerText = frases[random].persona;
+
+  ultimaFrase = random;
+});
 
 const frases = [
   {
